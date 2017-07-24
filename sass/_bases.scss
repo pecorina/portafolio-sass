@@ -1,0 +1,28 @@
+*{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*slider*/
+
+header{
+	padding: 20px;
+	margin: 0;
+	border: 0;
+}
+.slidem{
+   .carousel-title{
+   	
+   	  @include coruseltitulo();
+   }
+
+   @include imgcarusel();
+}
+
+.btn-rose{
+   
+   @include bontonrosa();
+}
+
+.segundo-largo{
+   @include segsection();
+}

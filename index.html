@@ -3,17 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>portafolio en sass</title>
+	<!--compatibilidad con navegadores de microsoft-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--adaptable a todos los tamaños de compu-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--tipografia-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<!--bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--font awesome-->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--css-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <header>
     <nav class="navbar navbar-fixed-top">
-	    <nav class="navbar navbar-default">
+	    <div class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -26,7 +33,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><a href="#"><i class="fa fa-cloud" aria-hidden="true"></i>Features<span class="caret"></span></a>
+                        <li class="dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><a href="#"><i class="fa fa-cloud" aria-hidden="true"></i>FEATURES<span class="caret"></span></a>
 						    <ul class="dropdown-menu">
 						        <li><a href="#">1 minute setup</a></li>
 						        <li><a href="#">fast updates & support</a></li>
@@ -42,7 +49,7 @@
 						        <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>woo commerce ready</a></li>
 						    </ul>
 						</li>
-						<li class="dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><a href="#"><i class="fa fa-cloud" aria-hidden="true"></i>Sections<span class="caret"></span></a>
+						<li class="dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><a href="#"><i class="fa fa-sort" aria-hidden="true"></i>SECTIONS<span class="caret"></span></a>
 						    <ul class="dropdown-menu">
 						        <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>features</a></li>
 						        <li><a href="#">About</a></li>
@@ -56,88 +63,120 @@
 						    </ul>
 						</li>
 
-        				<li><a href="#">Shop</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+        				<li><a href="#">SHOP</a></li>
+						<li><a href="#">BOLG</a></li>
+						<li><a href="#">CONTACT</a></li>
+						<button class="btn-rose">BUY NOW</button>
 					    </li>
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</div>
 	</nav>
 </header>
 
-<section class="carrusel">
-	<div class="container-full">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>
 
-  <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>-->
+  <!--Envoltorio para diapositivas-->
+    <div class="carousel-inner" role="listbox">
         <div class="item active">
-           <img src="img/img_slider_2.jpg" alt="foto1" style="width: 100%;" class="img-responsive">
+           <img class="slidem" src="img/img_slider_1.jpg" alt="foto1">
+           <div class="carousel-caption text-center">
+           	    <h1 class="carousel-title">Slick Material Design</h1>
+           	    <p class="carousel-subtitle">Beautiful, Elegantly Coded, One-Page WordPress Theme for Business</p>
+				<button class="btn-rose">SEE MORE</button>
+           </div>
         </div>
         <div class="item">
-            <img src="img/img_slider_1.jpg" alt="foto2">
+           <img class="slidem" src="img/img_slider_2.jpg" alt="foto2">
+             <div class="carousel-caption text-center">
+             	<h1 class="carousel-title">Simple & Awesome</h1>
+				<p class="carousel-subtitle">Beautiful, Elegantly Coded</p>
+				<button class="btn-rose">SEE MORE</button>
+             </div>                                             
         </div>
     </div>
 
   <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
     </div>
+
+<section class="segundo-largo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-xs-offset-1 text-center">
+				<h5 class="section-texto">
+				    Nullan bplancdi dali api cherifiquipimi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, adipisci quas accusantium natus nesciunt odio harum, suscipit magnam, animi consequatur, labore. Voluptatum adipisci harum rem quam quo neque, obcaecati fugit.
+				</h5>
+			</div>
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<div class="icons" >
+				    <div class="iconbox">
+				     	<i class="fa fa-th fa-4x icon-one" aria-hidden="true"></i>
+				    </div>
+				    <div class="parrafoicons">
+				     	<h4>lkrjg3oweig</h4>
+				     	<p class="texticons">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error exercitationem modi, repudiandae explicabo distinctio magnam quam eligendi assumenda itaque quaerat rerum libero, laboriosam voluptate ab architecto, dolor ad aliquam nostrum.</p>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+			    <div class="icons">
+			    	<div class="iconbay">
+			    		<i class="fa fa-4x fa-th-list" aria-hidden="true"></i>
+			    	</div>
+			    	<div class="parrafoicons">
+			    		<h4>sjdgrfoewp</h4>
+			    		<p class="texticons">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minima tempora, autem explicabo molestiae deleniti repellendus ipsa vel quis distinctio rerum quia repellat dolorum iste sequi, amet soluta. Dolorem, amet.</p>
+			    	</div>
+			    </div>
+			</div>
+			<div class="col-md-4 text-center">
+			    <div class="icons">
+			    	<div class="iconpei">
+			    		<i class="fa fa-4x fa-th-list" aria-hidden="true"></i>
+			    	</div>
+			    	<div class="parrafoicons">
+			    		<h4>jfreoing</h4>
+			    		<p class="texticons">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum asperiores, vitae quidem illo esse quia maiores. Ullam accusamus veritatis dicta, delectus ipsum eius harum inventore vitae reprehenderit at ut, temporibus.</p>
+			    	</div>
+			    </div>
+				
+			</div>
+
+		</div>
+		</div>
+	</div>
 </section>
 
+   
 
 
 
 
 
-<!--
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">Navbar</a>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Pricing</a>
-            </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
--->
+
+
 
 <script src="https://use.fontawesome.com/d1388a0a18.js"></script>
+<script src="sass/assets/javascripts/query.js"></script>
+<!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
