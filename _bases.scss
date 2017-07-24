@@ -1,0 +1,9 @@
+*{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*slider*/
+#myCarousel{
+   position: fixed;
+   @include imgcarusel();
+}
